@@ -29,7 +29,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
                     </li>
 
                     <li class="nav-item">
@@ -37,7 +37,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link active" href="#">Contact Us</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -66,7 +66,56 @@
         </div>
     </nav>
 
-    <h2>Contact Form</h2>
+    <div class="container my-4">
+        <h2>Contact Form</h2>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="f-name" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="f-name">
+            </div>
+            <div class="col-md-6">
+                <label for="l-name" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="l-name">
+            </div>
+            <div class="col-12">
+                <label for="query" class="form-label">Enter your Query</label>
+                <input type="text" class="form-control" id="query" placeholder="Could you help me with...">
+            </div>
+            <div class="col-12">
+                <label for="email" class="form-label">Enter you Email</label>
+                <input type="email" class="form-control" id="email" placeholder="blogger@myBlog.com">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="interests" class="form-label">Your interests</label>
+                <select id="interests" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Web 3.0</option>
+                    <option>MERN Stack</option>
+                    <option>Big Data</option>
+                    <option>.Net</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <div>
+                    <label for="gridCheck">
+                        Are you a member?
+                    </label>
+                    <input type="checkbox" id="gridCheck">Yes
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
 
     <hr>
     <footer class="container">
